@@ -1,0 +1,67 @@
+<!doctype>
+<html>
+	<head>
+    <title>CSS Animation</title>
+    <link rel="stylesheet" href="css/styles.css" />
+	</head>
+  <body>
+
+  <header>
+
+    <h1>Chapter 3 Typography Game</h1>
+
+    <nav id="navOptions">
+      <div>
+        <p>Difficulty &raquo; <span>1</span></p>
+        <input type="range" step="1" min="1" max="3" value="1" />
+      </div>
+      <img src="img/options-icon.png" />
+    </nav>
+
+    <section class="tracks">
+      <div class="track">
+        <span data-name="badGuy" data-speed="0"></span>
+      </div>
+
+      <div class="track">
+        <span data-name="goodGuy" data-speed="0"></span>
+      </div>
+    </section>
+
+    <section class="ocean">
+      <div class="wave wave-light"></div>  
+      <div id="boat"></div>
+      <div class="wave wave-blue"></div>
+    </section>
+  </header>
+ 
+  <section id="mainContainer">
+    <div id="wordsToWrite"></div>
+    <div id="wordsWritten"></div>
+    <button data-intent="play">Play</button>    
+  </section>
+
+  <section id="messageContainer">
+
+    <article>
+      <header>
+        <h2>Message Header Goes Here</h2>
+      </header>
+      <section class="closed">
+<form>
+  <input type="text" name="fullName" pattern="\w{2,16}\s\w{2,16}" placeholder="Full Name (Ex: John Doe)" autofocus />
+  <input type="email" name="email" placeholder="Email address" />
+  <input type="submit" value="Save" />
+</form>
+
+<ul></ul>
+
+<button data-intent="play">Play Again</button>
+      </section>
+    
+    </article>
+
+  </section>
+  <script src="js/game.js"></script>
+  </body>
+</html>
