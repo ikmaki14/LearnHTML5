@@ -200,7 +200,7 @@ function getWords() {
       "I think I can have fun while typing, and improving at the same time."];
   var rand = parseInt(Math.random() * phrases.length);
 
-  return phrases[rand];
+  return phrases[1];
 }
 
 function doOnPlayClicked() {
