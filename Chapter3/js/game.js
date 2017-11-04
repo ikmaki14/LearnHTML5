@@ -148,7 +148,7 @@ function saveNewChampion(event) {
 }
 
 function setEnemySpeed(speed) {
-  enemy.setSpeed(speed * 23);
+  enemy.setSpeed(speed * 3);
 }
 
 function handleKeyPress(event) {
@@ -193,14 +193,11 @@ function handleKeyPress(event) {
 
 function getWords() {
   var phrases = [
-      "The quick brown fox stopped being quick.",
       "I must win my dream boat.",
-      "I love HTML5 because its an amazing platform.",
-      "People who type fast are more likely to win at this game.",
-      "I think I can have fun while typing, and improving at the same time."];
+      "I love HTML5 because its an amazing platform."];
   var rand = parseInt(Math.random() * phrases.length);
 
-  return phrases[1];
+  return phrases[rand];
 }
 
 function doOnPlayClicked() {
