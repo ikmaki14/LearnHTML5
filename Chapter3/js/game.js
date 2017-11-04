@@ -193,11 +193,11 @@ function handleKeyPress(event) {
 
 function getWords() {
   var phrases = [
-      "The quick brown fox stopped being quick once its hunter started wearing chrome.",
-      "I must win my dream boat before the snaughty Mr. Snaughtington takes it from me.",
-      "I love HTML5 because it is such an amazing platform to develop games in.",
-      "People who type fast are more likely to win at this game. Yes, that is true.",
-      "For some reason, I think I can have fun while typing, and improving at the same time."];
+      "The quick brown fox stopped being quick.",
+      "I must win my dream boat.",
+      "I love HTML5 because its an amazing platform.",
+      "People who type fast are more likely to win at this game.",
+      "I think I can have fun while typing, and improving at the same time."];
   var rand = parseInt(Math.random() * phrases.length);
 
   return phrases[rand];
